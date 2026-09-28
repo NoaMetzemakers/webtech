@@ -52,8 +52,13 @@ Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duur
 
 ## 6. Je site
 
-- Welke drie waarden staan in je tokenblok, en waarom die?
+- Welke drie waarden staan in je tokenblok, en waarom die? 
+    --kleur-achtergrond --> om een kleur te hebben voor de achtergrond van de pagina's,
+    --lettertype --> om een bepaalde lettertype te implementeren aan mijn site
+    --teskgrootte --> om een basisgrootte te hebben voor alle teksten die aanwezig zijn in de site
+
 - Wat verandert er in je site als je één token wijzigt?
+    alle properties die die bepaalde token gebruiken krijgen automatisch de nieuwe waarden
 
 ## Thuis: R2.3 (met AI)
 

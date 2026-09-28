@@ -1,0 +1,31 @@
+:root {
+    --kleur-achtergrond: #25166751;
+    --kleur-tekst: #4f120a;
+
+    --lettertype: 'Times New Roman', Times, serif;
+
+    --tekstgrootte: 150%;
+}
+
+body{
+    font-family: var(--lettertype);
+    background-color: var(--kleur-achtergrond);
+    color: var(--kleur-tekst);
+    font-size: var(--tekstgrootte);
+}
+body a:hover, body a:focus{
+    color: var(--kleur-tekst);
+}
+
+nav a{
+    text-decoration: none;
+}
+
+h1,h2,h3 {
+    line-height: 5rem;
+}
+
+footer {
+    line-height: 5rem;
+    font-size: 80%;
+}
