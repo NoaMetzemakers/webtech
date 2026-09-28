@@ -1,0 +1,109 @@
+:root{
+    --pxmaat: 16px;
+    --remmaat: 0.25rem;
+}
+
+body {
+    background-color: #fbf7f0;
+}
+
+h1,h2,h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p, a, .kaart, ol > li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    color: #6b6b6b;
+    font-weight: 300;
+}
+
+h1 {
+    color: #b5451b;
+    font-weight: 500;
+}
+
+.slogan{
+    color: #6b6b6b;
+    font-style: italic;
+    line-height: 2rem;
+    font-size: 80%;
+}
+
+header nav a {
+    color: #b5451b;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-size: 80%;   
+    text-decoration: none;
+    
+}
+
+header nav a:hover, header nav a:focus {
+    text-decoration: underline;
+    color:#2b2b2b;
+}
+
+main h2{
+    font-weight: 500;
+    color:#2b2b2b;
+}
+
+.intro{
+    line-height: 3rem;
+}
+
+article p:nth-child(3), .kaart{
+    font-size: 80%;
+}
+
+article h3 {
+    line-height: 2rem;
+}
+
+
+.kaart li:nth-child(1), .kaart li:nth-child(3), .kaart li:nth-child(5) {
+    background-color: #f1e9dc;
+}
+
+.kaart span{
+    color: #6b6b6b;
+}
+
+.kaart li {
+    color: #2b2b2b;
+}
+
+article p{
+    font-size: 80%;
+}
+
+article p a:hover, article p a:focus{
+    color:#fbf7f0;
+    background-color: #b5451b;
+}
+
+article a, strong {
+    color:#b5451b;
+}
+
+article > p:nth-child(10){
+    font-size: 100%;
+}
+
+ol > li{
+    font-size: 80%;
+    line-height: 1.2rem;
+}
+
+footer, footer a {
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 80%;
+}
+
+footer a:hover, footer a:focus{
+    color: #b5451b;
+}
