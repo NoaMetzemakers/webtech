@@ -1,6 +1,6 @@
 # Labo 2 - reflecties
 
-Naam: Noa Metzeamkers
+Naam: Noa Metzemakers
 
 ## 2. Selectors lezen
 
