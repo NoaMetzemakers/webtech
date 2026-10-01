@@ -64,8 +64,8 @@ Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duur
 
 Prompt en onbewerkte output staan in `review/`. Minstens vijf bevindingen, elk met een verwijzing naar de sectie of het foutnummer:
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Het LLM laat weten dat de html-elementen correct zijn gebruikt voor een duidelijke structuur(enkel html) van de pagina
+2. Het LLM gebruikt moderne en handige CSS-keywords/variabele zoals :root en het gebruik maken van flexbox dat voor een minimalistische code-structuur zorgt
+3. Het LLM geeft een reminder om de mapstructuur en het pad aandachtig te controleren, zodat de browser de stijl.css correct kan toevoegen/inladen
+4. Het LLM waarschuwt voor hoofdlettergevoeligheid bij bestandsnamen in GitHub, om het meerdere keren na te kijken
+5. Het LLM raad aan om het gebruik van Live Server en het nakijken via DevTools binnen de browser om na te checken of de stijl correct werd geïnplementeerd

@@ -1,0 +1,193 @@
+Output:
+
+Hier is een bijpassend CSS-stylesheet (stijl.css) dat gebruikmaakt van je opgegeven kleurenpalet en de HTML-structuur helder, modern en overzichtelijk vormgeeft.
+
+css/stijl.css
+CSS
+/* ==========================================
+   CSS Variabelen & Kleurenpalet
+   ========================================== */
+:root {
+  --bg-main: #fbf7f0;       /* Lichte warme achtergrond */
+  --bg-card: #f1e9dc;       /* Zachte accentachtergrond (kaarten, nav) */
+  --text-dark: #2b2b2b;     /* Hoofdtekstkleur (donker) */
+  --text-muted: #6b6b6b;    /* Secundaire/subtiele tekstkleur (grijs) */
+  --accent: #b5451b;        /* Accentkleur (warm rood/terracotta) */
+}
+
+/* ==========================================
+   Base Styles / Reset
+   ========================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* ==========================================
+   Header & Navigatie
+   ========================================== */
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--bg-card);
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+header .slogan {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: var(--bg-card);
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+/* ==========================================
+   Main Content
+   ========================================== */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--bg-card);
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-dark);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p.intro {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* ==========================================
+   Menukaart (Lijsten)
+   ========================================== */
+ul.kaart {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  background-color: var(--bg-card);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+ul.kaart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(107, 107, 107, 0.3);
+}
+
+ul.kaart li:last-child {
+  border-bottom: none;
+}
+
+ul.kaart .prijs {
+  font-weight: bold;
+  color: var(--accent);
+  margin-left: 1rem;
+}
+
+/* Gelaagde genummerde lijst */
+ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+footer {
+  max-width: 800px;
+  margin: 4rem auto 2rem auto;
+  padding-top: 2rem;
+  border-top: 2px solid var(--bg-card);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+Kenmerken van deze stijl:
+Kleurenbalans: #fbf7f0 dient als rustige achtergrond, #f1e9dc wordt gebruikt voor visuele vlakken (zoals het menu en de navigatieknopjes), #b5451b als warme blikvanger (titels, accenten, prijzen) en #2b2b2b met #6b6b6b voor goed leesbare typografie.
+
+Menu-indeling: De dranken en zoetigheden (.kaart) zijn opgemaakt als strakke spijskaarten waarbij het item links staat en de prijs met een gestreepte stippellijn rechts is uitgelijnd.
+
+Responsief: De navigatie en de maximale breedte schalen automatisch mee op zowel mobiel als desktop.
