@@ -2,7 +2,56 @@
 
 /* === tokens === */
 :root {
+    --tomato: #ff6347;
+    --orangered: #FF4500;
+    --coral: #FF7F50;
+    --lightsalmon: #FFA07A;
+    --darkorange: #FF8C00;
 
+    --height: 50vh;
+    --padding: 10rem;
 }
 
 /* === your rules === */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    height: var(--height);
+    padding: var(--padding);
+    text-align: center;
+    list-style: none;
+}
+
+h2 {
+    letter-spacing: 0.25rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    word-spacing: 2rem;
+    font-size: 80%;
+}
+
+.tomato{
+    background-color: var(--tomato);
+}
+.orangered{
+    background-color: var(--orangered);
+}
+.coral{
+    background-color: var(--coral);
+}
+.lightsalmon{
+    background-color: var(--lightsalmon);
+}
+.darkorange{
+    background-color: var(--darkorange);
+}

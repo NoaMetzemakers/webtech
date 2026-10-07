@@ -2,7 +2,46 @@
 
 /* === tokens === */
 :root {
+    --oranje: #ec4b03;
+    --paars: #b99ec1;
+    --geel: #f9b700;
 
+    --randen: 0.75rem;
+    --buitenstevierkant: 90vh;
+    --ruimtebuitenstevierkant: 5vh;
+    
+
+    --margincirkel: 15%;
 }
 
 /* === your rules === */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5vh;
+    text-align: center;
+}
+
+main{
+    background-color: var(--oranje);
+    height: var(--buitenstevierkant);
+    align-items: center;
+}
+
+div{
+    background-color: var(--paars);
+    height: 70%;
+    border-radius: 50%;
+    padding: 15%;
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1{
+    background-color: var(--geel);
+    height: 90%;
+    width: 90%;
+    margin-left: -7%;
+    margin-top: -7%;
+
+}

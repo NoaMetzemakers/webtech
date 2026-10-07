@@ -2,7 +2,44 @@
 
 /* === tokens === */
 :root {
-
+    --achtergrond: #ff816f;
+    --tabblad: #ffd500;
+    --randschaduwkleur: black;
+    --dikte: 0.25rem;
+    --breedtetabblad: 15rem;
+    --breedtekaart: 35rem;
+    --ademruimtepagina: 5rem;
 }
 
 /* === your rules === */
+body{
+    padding: var(--ademruimtepagina);
+    background-color: var(--achtergrond);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    padding: 1rem;
+    background-color: var(--tabblad);
+    width: var(--breedtetabblad);
+    font-size: 100%;
+    border-bottom: 0;
+
+    border-top: var(--dikte) solid var(--randschaduwkleur);
+    border-right: var(--dikte) solid var(--randschaduwkleur);
+
+    border-left: .5rem solid var(--randschaduwkleur);
+}
+
+h2{
+    font-size: 260%;
+    padding: 3rem;
+    background-color: white;
+    width: var(--breedtekaart);
+    border-top: var(--dikte) solid var(--randschaduwkleur);
+    border-bottom: 0 , 3.5;
+
+    border-right: .5rem solid var(--randschaduwkleur);
+    border-bottom: .5rem solid var(--randschaduwkleur);
+    border-left: .5rem solid var(--randschaduwkleur);
+}
