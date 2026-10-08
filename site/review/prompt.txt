@@ -1,4 +1,37 @@
-Prompt:
+Prompt 2:
+Schrijf mijn CSS verder voor mijn persoonlijke site met volgende iplementaties 
+Een donkere achtergrond en een fijne tekstkleur met variabelen in :root, Maak een lay-out van (max) 800px breed en centreer deze op de pagina, geef de h1,h2,p enz. een vaste hoogte en breedte zodat ze netjesonder elkaar staan, zorg voor marges rond de elementen voor voldoende ademruimte/afstand. Let op het gebruik van volgende aangemaakte reset.css:
+/* reset.css - the project reset of Web Technology (syllabus 3.3)
+   Link it before stijl.css and leave it alone: your own CSS goes in stijl.css. */
+
+/* 1. A predictable box: width and height include padding and border */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Browser margins are our decision, not the browser's */
+body, h1, h2, h3, h4, h5, h6,
+p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* 3. Media never spills out of its container, and is a block, not a letter */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Form controls use the same typography as the page */
+input, button, textarea, select {
+  font: inherit;
+}
+
+
+
+
+Prompt 1:
 Genereer mij een stylesheet op basis van volgende HTML en kleuren:
 
 <!doctype html>

@@ -40,6 +40,6 @@ Naam: Noa Metzemakers
 
 Welke route koos je? Bij de AI-route: prompt en onbewerkte output staan in `site/review/`, en dit corrigeerde ik (met verwijzing naar de sectie of het foutnummer):
 
-1. 
-2. 
+1. 3.5 Het LLM(AI) gaf voor de pagina een vaste width en voor de teskblokken een vaste height, ik heb het naar max-width:800px; veranderd met margin:0 auto;
+2. 3.6 Het LLM gebruikte random marges aan alle kanten. Ik heb dit aangepast door alleen met margin-bottom te werken en de andere marges te koppelen aan verschillende CSS-variabelen.
 3. 

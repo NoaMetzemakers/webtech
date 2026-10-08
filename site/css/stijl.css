@@ -3,8 +3,10 @@
     --kleur-tekst: #4f120a;
 
     --lettertype: 'Times New Roman', Times, serif;
-
     --tekstgrootte: 150%;
+
+    --ruimteklein: 0.5rem;
+    --ruimtegroot: 2rem;
 }
 
 body{
@@ -13,6 +15,15 @@ body{
     color: var(--kleur-tekst);
     font-size: var(--tekstgrootte);
 }
+
+header{
+    margin-bottom: var(--ruimtegroot);
+}
+
+nav ul{
+    list-style: circle;
+}
+
 body a:hover, body a:focus{
     color: var(--kleur-tekst);
 }
@@ -21,11 +32,27 @@ nav a{
     text-decoration: none;
 }
 
+main{
+    max-width: 800px;
+    padding: var(--ruimtegroot);
+    margin-bottom: var(--ruimtegroot);
+}
+
+img{
+    margin-bottom: var(--ruimtegroot);
+    width: 15vw;
+    height: 20vh;
+}
+
 h1,h2,h3 {
-    line-height: 5rem;
+    margin-bottom: var(--ruimteklein);
+}
+
+p {
+    margin-bottom: var(--ruimtegroot);
 }
 
 footer {
-    line-height: 5rem;
+    margin-bottom: var(--ruimtegroot);
     font-size: 80%;
 }

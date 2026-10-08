@@ -1,4 +1,68 @@
-Output:
+Output 2:
+Hier is de gegenereerde CSS voor je pagina:
+
+css
+:root {
+    --kleur-achtergrond: #25166751;
+    --kleur-tekst: #4f120a;
+
+    --lettertype: 'Times New Roman', Times, serif;
+    --tekstgrootte: 150%;
+
+    --ruimteklein: 0.5rem;
+    --ruimtegroot: 2rem;
+}
+
+body{
+    font-family: var(--lettertype);
+    background-color: var(--kleur-achtergrond);
+    color: var(--kleur-tekst);
+    font-size: var(--tekstgrootte);
+}
+
+header{
+    margin-bottom: var(--ruimtegroot);
+}
+
+nav ul{
+    list-style: circle;
+}
+
+body a:hover, body a:focus{
+    color: var(--kleur-tekst);
+}
+
+nav a{
+    text-decoration: none;
+}
+
+main{
+    max-width: 800px;
+    padding: var(--ruimtegroot);
+    margin-bottom: var(--ruimtegroot);
+}
+
+img{
+    margin-bottom: var(--ruimtegroot);
+    width: 15vw;
+    height: 20vh;
+}
+
+h1,h2,h3 {
+    margin-bottom: var(--ruimteklein);
+}
+
+p {
+    margin-bottom: var(--ruimtegroot);
+}
+
+footer {
+    margin-bottom: var(--ruimtegroot);
+    font-size: 80%;
+}
+
+
+Output 1:
 
 Hier is een bijpassend CSS-stylesheet (stijl.css) dat gebruikmaakt van je opgegeven kleurenpalet en de HTML-structuur helder, modern en overzichtelijk vormgeeft.
 
