@@ -2,7 +2,70 @@
 
 /* === tokens === */
 :root {
-
+    --balk: #1f3a2e;
+    --tekst: #f3efe6;
+    --accent: #e6b53c;
 }
 
 /* === your rules === */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: var(--balk);
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+a.logo{
+    color: var(--accent);
+    font-weight: 600;
+    flex: 1;
+    font-size: 120%;
+}
+
+nav{
+    flex: 2;
+}
+
+nav, a.logo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+ul{
+    display: flex;
+    gap: 1rem;
+    /*margin-right: 1rem;*/
+    justify-content: end;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 0.5rem;
+}
+
+header a, li a{
+    text-decoration: none;
+}
+
+header a{
+    color: var(--tekst);
+}
+
+li a:hover, li a:focus{
+    background-color: var(--accent);
+    color: var(--balk);
+}
