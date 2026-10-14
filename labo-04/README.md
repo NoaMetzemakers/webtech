@@ -43,6 +43,6 @@ Naam: Noa Metzemakers
 
 Welke route koos je? Bij de AI-route: prompt en onbewerkte output staan in `site/review/`, en dit corrigeerde ik (met verwijzing naar de sectie of het foutnummer):
 
-1. 
-2. 
-3. 
+1. Prompt 3: Het LLM gaf de h1,h2,h3 en de li-elementen bepaalde kleuren die te dicht bij de kleur van de achtergrond kwamen en werd er dus geen rekening mee gehouden met de leesbaarheid en het contrast van kleuren tussen verschillende elementen.
+2. Prompt 3: Het LLM voegde onnodige-/nog niet behandelde css eigenschappen als transition en object-fit toe.
+3. Prompt 2: Het LLM gebruikt de oorspronkelijke kleuren van het vorige labo die de pagina nog niet professioneel genoeg maakte, het LLM ging er dan nog uit dat de kleuren volstonden voor de opdracht, ik heb het dus in prompt 2 aangepast om een strakkere, meer professioneel klinkende website als resultaat te verkrijgen.

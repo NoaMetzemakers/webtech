@@ -1,58 +1,146 @@
+/* === TOKENS (Professioneel Persoonlijk Palet) === */
 :root {
-    --kleur-achtergrond: #25166751;
-    --kleur-tekst: #4f120a;
+    --kleur-achtergrond: #f4f6f8;       /* Zachte, lichte off-white achtergrond */
+    --kleur-tekst: #2d3748;           /* Donker antraciet voor uitstekende leesbaarheid */
+    --kleur-kaart-bg: #ffffff;        /* Zuiver wit voor de kaarten */
+    --balk-bg: #1e293b;               /* Diep professioneel staalblauw/antraciet voor header/footer */
+    --balk-tekst: #f8fafc;            /* Helder lichtgrijs/wit voor tekst in de balk */
+    --accent: #2563eb;                /* Strakke, moderne koningsblauwe accentkleur (voor links/hover) */
 
-    --lettertype: 'Times New Roman', Times, serif;
-    --tekstgrootte: 150%;
+    --lettertype: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --tekstgrootte: 100%;             /* Standaard 100% leest prettiger dan direct 150% */
 
     --ruimteklein: 0.5rem;
-    --ruimtegroot: 2rem;
+    --ruimte-groot: 2rem;
 }
 
-body{
+/* === LAYOUT CONTAINER: BODY (Grondplan met Sticky Footer) === */
+body {
     font-family: var(--lettertype);
     background-color: var(--kleur-achtergrond);
     color: var(--kleur-tekst);
     font-size: var(--tekstgrootte);
+    line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
 }
 
-header{
-    margin-bottom: var(--ruimtegroot);
+/* === LAYOUT CONTAINER: HEADER (Flexbox navigatiebalk) === */
+header {
+    display: flex;
+    background-color: var(--balk-bg);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem var(--ruimte-groot);
 }
 
-nav ul{
-    list-style: circle;
+header nav ul {
+    display: flex;
+    gap: var(--ruimteklein);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-body a:hover, body a:focus{
+/* Zorg dat de tekst in de donkere header/nav goed leesbaar is */
+header nav a {
+    text-decoration: none;
+    color: var(--balk-tekst);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+}
+
+header nav a:hover, header nav a:focus {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+/* Algemene hover voor links buiten de nav */
+body a:hover, 
+body a:focus {
+    color: var(--accent);
+}
+
+/* === LAYOUT CONTAINER: MAIN (Leeskolom) === */
+main {
+    max-width: 800px;
+    padding: var(--ruimte-groot);
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* === LAYOUT CONTAINER: KAARTENROOSTER (Grid) === */
+.kaarten-rooster {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--ruimte-groot);
+    margin-bottom: var(--ruimte-groot);
+}
+
+/* === LAYOUT CONTAINER: INDIVIDUELE KAART (Flexbox column voor knop onderaan) === */
+.kaart {
+    background-color: var(--kleur-kaart-bg);
+    padding: var(--ruimte-groot);
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0; /* Subtiele rand voor een strakke look */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Zorg dat tekst binnen lijstitems/kaarten op wit goed donker en leesbaar is */
+.kaart li, 
+.kaart p,
+.kaarten-rooster li {
     color: var(--kleur-tekst);
 }
 
-nav a{
+/* Zorgt dat de beschrijving de ruimte opvult zodat de knop naar beneden geduwd wordt */
+.kaart .beschrijving {
+    flex: 1;
+    margin-bottom: var(--ruimte-groot);
+}
+
+/* Stijl voor de knop onderaan de kaart */
+.knop {
+    background-color: var(--accent);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.knop:hover, .knop:focus {
+    background-color: #1d4ed8; /* Donkerdere tint blauw bij hover */
     text-decoration: none;
 }
 
-main{
-    max-width: 800px;
-    padding: var(--ruimtegroot);
-    margin-bottom: var(--ruimtegroot);
-}
-
-img{
-    margin-bottom: var(--ruimtegroot);
+img {
+    margin-bottom: var(--ruimte-groot);
     width: 15vw;
     height: 20vh;
+    border-radius: 0.25rem;
 }
 
-h1,h2,h3 {
+/* Zorg dat koppen een mooie donkere kleur hebben die contrasteert met de achtergrond */
+h1, h2, h3 {
     margin-bottom: var(--ruimteklein);
+    color: #0f172a; 
 }
 
 p {
-    margin-bottom: var(--ruimtegroot);
+    margin-bottom: var(--ruimte-groot);
 }
 
+/* === LAYOUT CONTAINER: FOOTER === */
 footer {
-    margin-bottom: var(--ruimtegroot);
-    font-size: 80%;
+    background-color: var(--balk-bg);
+    color: var(--balk-tekst); /* Lichtgekleurde tekst op de donkere footer-achtergrond */
+    text-align: center;
+    padding: var(--ruimte-groot);
+    font-size: 85%;
 }

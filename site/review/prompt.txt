@@ -1,4 +1,26 @@
-Prompt 2:
+Prompt 3 Labo 4:
+Verwijder de transitions,object-fit, pas de kleuren aan voor de titel en de li's want ze hebben dezelfde kleur als de achtergrond waar ze zich bevinden
+
+
+Prompt 2 Labo 4:
+verander alle kleuren om een balans te creeren tussen een professionele en persoonlijke site
+
+
+Prompt 1 Labo 4:
+Pas mijn website aan aan de hand van volgende voorwaarde:
+het grondplan met sticky footer op body , de navigatie als flex-rij, een
+kaartenrooster voor je projecten of interesses in grid, en elke kaart als flex-column met de
+knop onderaan. Elke container in je CSS krijgt een commentaarregel met zijn taak.
+
+B4.1 van het syllabus:
+B4.1 Versie vier van je persoonlijke site: het volledige bouwplan van 4.8, grondplan-grid met
+sticky footer, flex-navigatie, een kaartenrooster voor je projecten of interesses, en geneste flexcolumns binnen de kaarten. Elke container in je CSS krijgt een commentaarregel met zijn taak. Bij
+de AI-route: prompt, onbewerkte output, verbeterlijst; let dit keer op de vier patronen uit het AIkader.
+
+
+
+
+Prompt Labo 3:
 Schrijf mijn CSS verder voor mijn persoonlijke site met volgende iplementaties 
 Een donkere achtergrond en een fijne tekstkleur met variabelen in :root, Maak een lay-out van (max) 800px breed en centreer deze op de pagina, geef de h1,h2,p enz. een vaste hoogte en breedte zodat ze netjesonder elkaar staan, zorg voor marges rond de elementen voor voldoende ademruimte/afstand. Let op het gebruik van volgende aangemaakte reset.css:
 /* reset.css - the project reset of Web Technology (syllabus 3.3)
@@ -31,7 +53,7 @@ input, button, textarea, select {
 
 
 
-Prompt 1:
+Prompt:
 Genereer mij een stylesheet op basis van volgende HTML en kleuren:
 
 <!doctype html>
