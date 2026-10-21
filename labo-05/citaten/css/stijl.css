@@ -2,7 +2,78 @@
 
 /* === tokens === */
 :root {
-
+    --blauw: #1e5bd8;
+    --roze: #e88bb4 ;
+    --rood: #c51f2a;
+    --oranje: #d98c1a ;
+    --groen: #3b7a2a;
+    --salie: #8fb89a;
+    --paars: #7b4fa3;
+    --grijs: #6b6b6b;
 }
 
 /* === your rules === */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.citaten{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+p{
+    font-weight: 600;
+}
+
+blockquote{
+    flex: 1 1 18rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+cite{
+    font-size: 0.875rem;
+    font-style: normal;
+}
+
+blockquote.citaat.blauw{
+    border-left: 0.5rem solid currentColor;
+    color: var(--blauw);
+
+}
+blockquote.citaat.roze{
+    border-left: 0.5rem solid currentColor;
+    color: var(--roze);
+}
+blockquote.citaat.rood{
+    border-left: 0.5rem solid currentColor;
+    color: var(--rood);
+}
+blockquote.citaat.oranje{
+    border-left: 0.5rem solid currentColor;
+    color: var(--oranje);
+}
+blockquote.citaat.groen{
+    border-left: 0.5rem solid currentColor;
+    color: var(--groen);
+}
+blockquote.citaat.salie{
+    border-left: 0.5rem solid currentColor;
+    color: var(--salie);
+}
+blockquote.citaat.paars{
+    border-left: 0.5rem solid currentColor;
+    color: var(--paars);
+}
+blockquote.citaat.grijs{
+    border-left: 0.5rem solid var(--grijs);
+    color: var(--grijs);
+}

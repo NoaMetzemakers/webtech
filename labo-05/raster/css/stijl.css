@@ -2,7 +2,52 @@
 
 /* === tokens === */
 :root {
-
+    --kleur-a:#e9493f;
+    --kleur-b:#edd24a;
+    --kleur-c:#072f55;
+    --kleur-d:#52a51a;
+    --kleur-e:#efaad9;
+    --kleur-f:#a5f129;
+    --kleur-g:#ebc47a;
+    --kleur-h:#e8882c;
 }
 
 /* === your rules === */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: end;
+    padding: 1rem;
+}
+
+
+.raster{
+    min-height: 100vh;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "a . . b"
+    "c d e f"
+    "g . . h"
+    ;
+}
+
+div{
+    padding-top: 0.5rem;
+    padding-right: 0.75rem;
+}
+
+
+
+
+div.vlak.a {background-color: var(--kleur-a); grid-area: a;}
+div.vlak.b {background-color: var(--kleur-b); grid-area: b;}
+div.vlak.c {background-color: var(--kleur-c); grid-area: c;}
+div.vlak.d {background-color: var(--kleur-d); grid-area: d;}
+div.vlak.e {background-color: var(--kleur-e); grid-area: e;}
+div.vlak.f {background-color: var(--kleur-f); grid-area: f;}
+div.vlak.g {background-color: var(--kleur-g); grid-area: g;}
+div.vlak.h {background-color: var(--kleur-h); grid-area: h;}

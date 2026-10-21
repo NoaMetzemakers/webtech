@@ -1,31 +1,43 @@
 # Labo 5 - reflecties
 
-Naam: (jouw naam)
+Naam: Noa Metzemakers
 
 ## 1. Letterraster
 
 - Wat gebeurt er als je in de template één gebied een L-vorm geeft, en waarom?
+    Als de cel een L-vorm krijgt, sluiten de andere div's zich rond die lege ruimte (de ruimte moet dan gevuld worden).
 - Hoeveel declaraties zou dezelfde plaatsing met `grid-column` en `grid-row` vragen?
+    Er zouden dan 16 declaraties nodig zijn (8 keer grid-row + 8 keer grid-column)
 
 ## 2. Citaten
 
 - Waarom lijnt de tweede rij bij 1280 px niet uit met de eerste zoals een grid dat zou doen?
+    Omdat flexbox de de blockquote-elementen uitrekt op de volleidge breedte van de rij waarin ze liggen, ze vullen de lege ruimte op, hierdoor krijgen de overige blockquote-elementen een andere breedte op de tweede rij.
 - Wat verandert er als je de basis van 18rem naar 30rem zet, en waarom?
+    Alle blockquotes worden onder elkaar gepositioneerd alsof flex niet aangewezen werd op de main (.citaten).
 
 ## 3. Fotolijst
 
 - Waar belanden de vlakjes als je `position: relative` van de lijst weghaalt, en waarom?
+    De vlakjes worden van hun plaats gehaald omdat ze de lijst niet meer als ankerpunt zien, het ankerpunt wordt vanaf dan de volledige html.
 - Waarom ligt roze zonder `z-index` onder groen?
+    ?
 
 ## 4. Toonzaal
 
 - Wat gebeurt er als je `top: 0` weghaalt, en waarom?
+    De balk plakt dan niet meer wanneer er gescrolled wordt omdat de browser anders niet weet waar er op de pagina geplakt moet worden/blijven.
 - Wat is het verschil met `position: fixed` voor de rest van de pagina, en welke extra declaratie zou fixed nodig hebben?
+    ?
 
 ## 5. Koffiebar Kaai 12
 
 - Welke drie vragen van deze week (container, item, plaatsing) beantwoordde je waar in deze pagina?
+    container: body en .kaarten,
+    item: .kaart,
+    plaatsing: .badge --> position:absolute.
 - Haal `aspect-ratio` weg bij de foto's: wat gebeurt er met het rooster, en waarom?
+    Zonder aspect-ratio houden de img-elementen hun originele afmetingen en kunnen afbeeldingen groter of kleiner zijn dan hun buur(img-element(en)), waarom ?
 
 ## Thuis: B5.1 (met AI of zonder AI)
 

@@ -2,7 +2,193 @@
 
 /* === tokens === */
 :root {
-
+    --papierkleur: #f4efe6;
+    --kaartkleur: #ffffff;
+    --inktkleur: #2b2b2b;
+    --gedemptkleur: #6b6b6b;
+    --balkkleur: #2f241d;
+    --accentkleur: #c8742e;
 }
 
 /* === your rules === */
+body{
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer"
+    ;
+    min-height: 100vh;
+    color: var(--inktkleur);
+    background-color: var(--papierkleur);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+header{
+    grid-area: header;
+    color: var(--papierkleur);
+    background-color: var(--balkkleur);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.logo{
+    color: var(--accentkleur);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: auto;
+}
+
+
+header nav a {
+    color: var(--papierkleur);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+a.actief{
+    color: var(--accentkleur);
+
+}
+
+
+header nav a:focus, header nav a:hover{
+    text-decoration: underline;
+
+}
+
+aside{
+    grid-area: aside;
+    font-size: 0.875rem;
+    padding: 2rem;
+    border-right: 1px solid #ddd5c8;
+}
+
+aside h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+aside p {
+    color: var(--inktkleur);
+    margin-bottom: 1.5rem;
+}
+
+
+main{
+    grid-area: main;
+    padding: 2rem;
+}
+
+
+main h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.intro{
+    color: var(--gedemptkleur);
+    margin-bottom: 2rem;
+}
+
+
+.kaarten{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.kaart {
+    background-color: var(--kaartkleur);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+
+.kaart:has(img) {
+    padding: 0;
+}
+
+.kaart:not(:has(img)) {
+    border-top: 0.5rem solid var(--accentkleur);
+}
+
+.kaart img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+
+.tekst{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.kaart:has(img) .tekst{
+    padding: 1.5rem;
+}
+
+.tekst h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.tekst p {
+    color: var(--inktkleur);
+    margin-bottom: 1rem;
+}
+
+.tekst p.prijs {
+    margin-top: auto;
+    color: var(--accentkleur);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.badge {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background-color: var(--accentkleur);
+    color: var(--papier);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    z-index: 10;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--balkkleur);
+    color: var(--papierkleur);
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 2rem;
+}
