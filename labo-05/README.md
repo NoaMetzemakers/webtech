@@ -41,8 +41,10 @@ Naam: Noa Metzemakers
 
 ## Thuis: B5.1 (met AI of zonder AI)
 
-Welke route koos je? Bij de AI-route: prompt en onbewerkte output staan in `site/review/`, en dit corrigeerde ik (met verwijzing naar de sectie of het foutnummer):
+Welke route koos je? De AI-route.
 
-1. 
-2. 
-3. 
+Bij de AI-route: prompt en onbewerkte output staan in `site/review/`, en dit corrigeerde ik (met verwijzing naar de sectie of het foutnummer):
+
+1. Absolute en sticky (5.1): het LLM gebruikte vast en absolute positie bij position voor de nav. Dit heb ik met scroll-padding-top gecorrigeerd.
+2. Z-index: het LLM plaatste de z-index met 1000, ik heb het gecorrigeerd met 10 want we hebben zo een groot getal voor de z-index momenteel niet nodig.
+3. Afbeelding (F4.5): het LLM weigerde te werken met bepaalde afmetingen, ik heb het gecorrigeerd met aspect-ratio en object-fit.

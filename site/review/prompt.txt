@@ -1,3 +1,11 @@
+Prompt Labo 5:
+Genereer een CSS-stylesheet (stijl.css) voor een persoonlijke website met vier HTML-pagina's (Home, Over mij, Hobby, Boodschappenlijst). Voeg volgende elementen toe die ik deze les heb gebruikt:
+het grondplan met named areas (met of zonder zijbalk, jouw keuze,
+beargumenteerd in commentaar), een sticky navigatie met scroll-padding-top , minstens één
+badge op een kaart, uniforme kaartafbeeldingen via het drieluik, en één :has() -regel die
+echte inhoudsvariatie opvangt
+(pdf van les 5 als upload)
+
 Prompt 3 Labo 4:
 Verwijder de transitions,object-fit, pas de kleuren aan voor de titel en de li's want ze hebben dezelfde kleur als de achtergrond waar ze zich bevinden
 
