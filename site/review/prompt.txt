@@ -1,3 +1,14 @@
+Prompt 2 Labo 6:
+haal de transform en transitions weg, we hebben die elementen nog niet gezien in de leerstof.
+
+
+Prompt 1 Labo 6:
+Vul mijn css vanuit vorige sessies verder aan met de nieuwe/aangeleerde elementen van Labo 6:
+volledig responsive van 320 px tot breedbeeld, met de kantelende
+plattegrond (of een beargumenteerde eenvoudiger structuur), het zelforganiserende raster
+voor je kaarten (6.8), clamp() op je titels, breekpunten in rem, hover-effecten achter (hover:hover) , loading="lazy" onder de vouw
+
+
 Prompt Labo 5:
 Genereer een CSS-stylesheet (stijl.css) voor een persoonlijke website met vier HTML-pagina's (Home, Over mij, Hobby, Boodschappenlijst). Voeg volgende elementen toe die ik deze les heb gebruikt:
 het grondplan met named areas (met of zonder zijbalk, jouw keuze,

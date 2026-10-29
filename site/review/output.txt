@@ -1,3 +1,291 @@
+Output 2 Labo 6:
+/* === TOKENS (Professioneel Persoonlijk Palet + Labo 6) === */
+:root {
+    --kleur-achtergrond: #f4f6f8;       /* Zachte, lichte off-white achtergrond */
+    --kleur-tekst: #2d3748;             /* Donker antraciet voor uitstekende leesbaarheid */
+    --kleur-kaart-bg: #ffffff;          /* Zuiver wit voor de kaarten */
+    --balk-bg: #1e293b;                 /* Diep professioneel staalblauw/antraciet voor header/footer */
+    --balk-tekst: #f8fafc;              /* Helder lichtgrijs/wit voor tekst in de balk */
+    --accent: #2563eb;                  /* Strakke, moderne koningsblauwe accentkleur (voor links/hover) */
+
+    --lettertype: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --tekstgrootte: 100%;               
+
+    --ruimteklein: 0.5rem;
+    --ruimte-groot: 2rem;
+}
+
+html {
+    scroll-padding-top: 4.5rem;
+}
+
+/* === LAYOUT CONTAINER: BODY (Grondplan met Sticky Footer) === */
+body {
+    font-family: var(--lettertype);
+    background-color: var(--kleur-achtergrond);
+    color: var(--kleur-tekst);
+    font-size: var(--tekstgrootte);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* === LAYOUT CONTAINER: HEADER (Flexbox navigatiebalk) === */
+header {
+    display: flex;
+    background-color: var(--balk-bg);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem var(--ruimte-groot);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    gap: var(--ruimteklein);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--balk-tekst);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+}
+
+header nav a:hover, header nav a:focus {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+body a:hover, 
+body a:focus {
+    color: var(--accent);
+}
+
+body > *:not(header):not(footer) {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: var(--ruimte-groot);
+    padding-right: var(--ruimte-groot);
+}
+
+body > h2:first-of-type,
+body > main > h2:first-of-type {
+    margin-top: var(--ruimte-groot);
+}
+
+main {
+    flex: 1;
+}
+
+/* === TYPOGRAFIE & TITELS (met clamp) === */
+h1, h2, h3 {
+    margin-bottom: var(--ruimteklein);
+    color: #0f172a; 
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+p, ul, ol {
+    margin-bottom: var(--ruimte-groot);
+}
+
+/* === AFBEELDINGEN === */
+img {
+    margin-top: var(--ruimteklein);
+    margin-bottom: var(--ruimte-groot);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+/* === ZELFORGANISEREND RASTER VOOR KAARTEN (Labo 6 - 6.8) === */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--ruimte-groot);
+    margin-bottom: var(--ruimte-groot);
+}
+
+.card {
+    background-color: var(--kleur-kaart-bg);
+    padding: var(--ruimte-groot);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* === HOVER EFFECTEN (Zonder transform/transition) === */
+@media (hover: hover) {
+    .card:hover {
+        border-color: var(--accent);
+    }
+}
+
+/* === LAYOUT CONTAINER: FOOTER === */
+footer {
+    background-color: var(--balk-bg);
+    color: var(--balk-tekst);
+    text-align: center;
+    padding: var(--ruimte-groot);
+    font-size: 85%;
+    margin-top: auto;
+}
+
+
+Output 1 Labo 6:
+/* === TOKENS (Professioneel Persoonlijk Palet + Labo 6) === */
+:root {
+    --kleur-achtergrond: #f4f6f8;       /* Zachte, lichte off-white achtergrond */
+    --kleur-tekst: #2d3748;             /* Donker antraciet voor uitstekende leesbaarheid */
+    --kleur-kaart-bg: #ffffff;          /* Zuiver wit voor de kaarten */
+    --balk-bg: #1e293b;                 /* Diep professioneel staalblauw/antraciet voor header/footer */
+    --balk-tekst: #f8fafc;              /* Helder lichtgrijs/wit voor tekst in de balk */
+    --accent: #2563eb;                  /* Strakke, moderne koningsblauwe accentkleur (voor links/hover) */
+
+    --lettertype: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --tekstgrootte: 100%;               
+
+    --ruimteklein: 0.5rem;
+    --ruimte-groot: 2rem;
+}
+
+html {
+    scroll-padding-top: 4.5rem;
+}
+
+/* === LAYOUT CONTAINER: BODY (Grondplan met Sticky Footer) === */
+body {
+    font-family: var(--lettertype);
+    background-color: var(--kleur-achtergrond);
+    color: var(--kleur-tekst);
+    font-size: var(--tekstgrootte);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* === LAYOUT CONTAINER: HEADER (Flexbox navigatiebalk) === */
+header {
+    display: flex;
+    background-color: var(--balk-bg);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem var(--ruimte-groot);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    gap: var(--ruimteklein);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--balk-tekst);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+}
+
+header nav a:hover, header nav a:focus {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+body a:hover, 
+body a:focus {
+    color: var(--accent);
+}
+
+body > *:not(header):not(footer) {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: var(--ruimte-groot);
+    padding-right: var(--ruimte-groot);
+}
+
+body > h2:first-of-type,
+body > main > h2:first-of-type {
+    margin-top: var(--ruimte-groot);
+}
+
+main {
+    flex: 1;
+}
+
+p, ul, ol {
+    margin-bottom: var(--ruimte-groot);
+}
+
+/* === AFBEELDINGEN === */
+img {
+    margin-top: var(--ruimteklein);
+    margin-bottom: var(--ruimte-groot);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+/* === ZELFORGANISEREND RASTER VOOR KAARTEN (Labo 6 - 6.8) === */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--ruimte-groot);
+    margin-bottom: var(--ruimte-groot);
+}
+
+.card {
+    background-color: var(--kleur-kaart-bg);
+    padding: var(--ruimte-groot);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* === HOVER EFFECTEN (Alleen voor apparaten die hover ondersteunen) === */
+@media (hover: hover) {
+    .card:hover {
+        transform: translateY(-4px);
+        transition: transform 0.2s ease;
+    }
+}
+
+/* === LAYOUT CONTAINER: FOOTER === */
+footer {
+    background-color: var(--balk-bg);
+    color: var(--balk-tekst);
+    text-align: center;
+    padding: var(--ruimte-groot);
+    font-size: 85%;
+    margin-top: auto;
+}
+
+
+
 Output Labo 5:
 /* === TOKENS (Professioneel Persoonlijk Palet) === */
 :root {

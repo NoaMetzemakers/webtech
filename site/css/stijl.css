@@ -1,4 +1,4 @@
-/* === TOKENS (Professioneel Persoonlijk Palet) === */
+/* === TOKENS (Professioneel Persoonlijk Palet + Labo 6) === */
 :root {
     --kleur-achtergrond: #f4f6f8;       /* Zachte, lichte off-white achtergrond */
     --kleur-tekst: #2d3748;             /* Donker antraciet voor uitstekende leesbaarheid */
@@ -8,7 +8,7 @@
     --accent: #2563eb;                  /* Strakke, moderne koningsblauwe accentkleur (voor links/hover) */
 
     --lettertype: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    --tekstgrootte: 100%;               /* Standaard 100% leest prettiger dan direct 150% */
+    --tekstgrootte: 100%;               
 
     --ruimteklein: 0.5rem;
     --ruimte-groot: 2rem;
@@ -51,7 +51,6 @@ header nav ul {
     padding: 0;
 }
 
-/* Zorg dat de tekst in de donkere header/nav goed leesbaar is */
 header nav a {
     text-decoration: none;
     color: var(--balk-tekst);
@@ -64,7 +63,6 @@ header nav a:hover, header nav a:focus {
     color: #ffffff;
 }
 
-/* Algemene hover voor links buiten de nav */
 body a:hover, 
 body a:focus {
     color: var(--accent);
@@ -88,6 +86,21 @@ main {
     flex: 1;
 }
 
+/* === TYPOGRAFIE & TITELS (met clamp) === */
+h1, h2, h3 {
+    margin-bottom: var(--ruimteklein);
+    color: #0f172a; 
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+p, ul, ol {
+    margin-bottom: var(--ruimte-groot);
+}
+
+/* === AFBEELDINGEN === */
 img {
     margin-top: var(--ruimteklein);
     margin-bottom: var(--ruimte-groot);
@@ -99,20 +112,32 @@ img {
     border-radius: 0.25rem;
 }
 
-/* Zorg dat koppen een mooie donkere kleur hebben die contrasteert met de achtergrond */
-h1, h2, h3 {
-    margin-bottom: var(--ruimteklein);
-    color: #0f172a; 
+/* === ZELFORGANISEREND RASTER VOOR KAARTEN (Labo 6 - 6.8) === */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--ruimte-groot);
+    margin-bottom: var(--ruimte-groot);
 }
 
-p, ul, ol {
-    margin-bottom: var(--ruimte-groot);
+.card {
+    background-color: var(--kleur-kaart-bg);
+    padding: var(--ruimte-groot);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* === HOVER EFFECTEN (Zonder transform/transition) === */
+@media (hover: hover) {
+    .card:hover {
+        border-color: var(--accent);
+    }
 }
 
 /* === LAYOUT CONTAINER: FOOTER === */
 footer {
     background-color: var(--balk-bg);
-    color: var(--balk-tekst); /* Lichtgekleurde tekst op de donkere footer-achtergrond */
+    color: var(--balk-tekst);
     text-align: center;
     padding: var(--ruimte-groot);
     font-size: 85%;

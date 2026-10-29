@@ -2,9 +2,166 @@
 
 /* === tokens === */
 :root {
-
+    --papierkleur:  #fff8ee;
+    --inktkleur: #1a1a1a;
+    --gedempt: #6b6b6b;
+    --accentkleur: #d6341c;
 }
 
 /* === base: narrow screens first === */
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: var(--papierkleur);
+    color: var(--inktkleur);
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--inktkleur);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    font-weight: 600;
+}
+
+.logo {
+    color: var(--accentkleur);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+    margin-bottom: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+}
+
+header nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--accentkleur);
+    font-weight: bold;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--accentkleur);
+    border-radius: 2rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.actief {
+    background-color: var(--accentkleur);
+    color: #ffffff;
+}
+
+header nav a:hover, 
+header nav a:focus {
+    background-color: #ffffff;
+    color: var(--inktkleur);
+}
+
+.held {
+    background-color: var(--accentkleur);
+    color: var(--papierkleur);
+    padding: clamp(2rem, 8vw, 6rem) clamp(1rem, 5vw, 4rem);
+}
+
+.held h1 {
+    font-size: clamp(2rem, 5.0vw + 1rem, 4rem);
+    line-height: 1.1;
+    color: var(--papierkleur);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.held p {
+    margin: 0;
+}
+
+main section + section {
+    max-width: 44rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 5vw, 4rem);
+}
+
+main section + section h2 {
+    margin-top: 0;
+}
+
+.programma {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.programma li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e3d9c8;
+}
+
+.programma time {
+    color: var(--accentkleur);
+    font-weight: 600;
+    min-width: 4rem;
+}
+
+.programma strong {
+    font-weight: bold;
+}
+
+.programma span {
+    color: var(--gedempt);
+    margin-left: auto; 
+}
+
+footer {
+    color: var(--gedempt);
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
 /* === media queries: below the base rules === */
+@media (min-width: 50rem) {
+    header nav ul {
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+    }
+
+    header nav a {
+        width: auto;
+    }
+}
+
+@media (min-width: 75rem) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .logo {
+        margin-bottom: 0;
+        margin-right: auto;
+    }
+}

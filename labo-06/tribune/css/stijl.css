@@ -2,9 +2,99 @@
 
 /* === tokens === */
 :root {
-
+    --kleur1:  #f4704e;
+    --kleur2: #1b6a8a;
+    --kleur3: #6b4a42;
+    --kleur4: #3d4f4a;
+    --kleur5: #1f6f63;
+    --kleur6: #ffc83d;
+    --kleur7: #ef5350;
+    --kleur8: #0a9d4f;
+    --kleur9: #d32f2f;
+    --kleur10: #ebe5dc;
 }
 
 /* === base: narrow screens first === */
 
+.tribune{
+    display: grid;
+    gap: 0.25rem;
+    min-height: 100svh;
+}
+
+.rij{
+    color: white;
+    font-weight: 600;
+    padding-top: 0.25rem;
+    padding-left: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.r1{
+    background-color: var(--kleur1);
+}
+.r2{
+    background-color: var(--kleur2);
+}
+.r3{
+    background-color: var(--kleur3);
+}
+.r4{
+    background-color: var(--kleur4);
+}
+.r5{
+    background-color: var(--kleur5);
+}
+.r6{
+    background-color: var(--kleur6);
+}
+.r7{
+    background-color: var(--kleur7);
+}
+.r8{
+    background-color: var(--kleur8);
+}
+.r9{
+    background-color: var(--kleur9);
+}
+.r10{
+    background-color: var(--kleur10);
+    color: black;
+}
 /* === media queries: below the base rules === */
+@media(min-width:62.5rem){
+    .tribune{
+        grid-template-columns: repeat(10,1fr);
+    }
+    
+    .r1{
+    grid-column: 1 / -1
+    }
+    .r2{
+        grid-column: 2 / -1
+    }
+    .r3{
+        grid-column: 3 / -1
+    }
+    .r4{
+        grid-column: 4 / -1
+    }
+    .r5{
+        grid-column: 5 / -1
+    }
+    .r6{
+        grid-column: 6 / -1
+    }
+    .r7{
+        grid-column: 7 / -1
+    }
+    .r8{
+        grid-column: 8 / -1
+    }
+    .r9{
+        grid-column: 9 / -1
+    }
+    .r10{
+        grid-column: 10 / -1
+    }
+}
