@@ -1,3 +1,17 @@
+Prompt 2 Labo 7:
+main nav a[href]:hover,
+main nav a[href]:focus
+
+het href gedeelte in de css hebben we nog niet gezien
+
+Prompt 1 Labo 7:
+Vul mijn css vanuit vorige sessies verder aan met de nieuwe/aangeleerde token eigenschappen en elementen van Labo 7:
+het volledige designsysteem. Zelfgehoste letter(s) in site/fonts/ , een
+typografische schaal en een spacing-schaal, vijf kleurrollen in hsl, elk paar gemeten (minstens
+4.5:1), en een dark mode die uit niets anders bestaat dan tokens in één query. 
+
+
+
 Prompt 2 Labo 6:
 haal de transform en transitions weg, we hebben die elementen nog niet gezien in de leerstof.
 

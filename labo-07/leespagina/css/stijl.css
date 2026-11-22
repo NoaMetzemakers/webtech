@@ -1,12 +1,158 @@
 /* stijl.css - labo 7, leespagina (reset.css is linked before this file) */
 
 /* === fonts: one @font-face per file in fonts/ (7.2) === */
+@font-face {
+ font-family: "Fraunces";
+ src: url("../fonts/fraunces-latin-wght-italic.woff2") format("woff2");
+ font-weight: 100 900; 
+ font-display: swap; 
+ font-style: italic;
+}
+@font-face {
+ font-family: "Fraunces";
+ src: url("../fonts/fraunces-latin-wght-normal.woff2") format("woff2");
+ font-weight: 100 900; 
+ font-display: swap; 
+}
+@font-face {
+ font-family: "Atkinson";
+ src: url("../fonts/atkinson-hyperlegible-latin-400-italic.woff2") format("woff2");
+ font-weight: 400; 
+ font-display: swap; 
+ font-style: italic;
+}
+@font-face {
+ font-family: "Atkinson";
+ src: url("../fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2");
+ font-weight: 400; 
+ font-display: swap; 
+}
+@font-face {
+ font-family: "Atkinson";
+ src: url("../fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2");
+ font-weight: 700; 
+ font-display: swap; 
+}
 
 /* === tokens: type scale, spacing scale, colour roles (7.4, 7.5, 7.7) === */
 :root {
+    --kop: "Fraunces", Georgia, serif;
+    --tekst: "Atkinson", Verdana, sans-serif;
+
+    --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-xxl: 1.953rem;
+    --text-xxxl: 2.441rem;
+
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
+
+    --oppervlakkleur: hsl(40 30% 97%);
+    --inktkleur: hsl(230 25% 15%);
+    --gedemptkleur: hsl(230 10% 42%);
+    --accentkleur: hsl(15 70% 42%);
+    --lijnkleur: hsl(230 15% 85%);
+
+    --kolombreedte: 65ch;
 
 }
 
 /* === base === */
+body{
+    background-color: var(--oppervlakkleur);
+}
+
+h1,h2,h3, .intro, .bron{
+    font-family: var(--kop);
+}
+
+p{
+    font-family: var(--tekst);
+    font-size: var(--text-m);
+    line-height: 1.5;
+    margin-bottom: var(--space-m);
+}
+
+.bovenkop{
+    font-size: var(--text-s);
+    color: var(--accentkleur);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-s);
+}
+
+h1{
+    font-size: var(--text-xxxl);
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: var(--space-m);
+}
+
+.intro{
+    font-size: var(--text-l);
+    line-height: 1.4;
+    margin-bottom: var(--space-m);
+}
+
+.meta{
+    font-size: var(--text-s);
+    color: var(--gedemptkleur);
+    padding-bottom: var(--space-m);
+    border-bottom: 1px solid var(--lijnkleur);
+    margin-bottom: var(--space-xl);
+}
+
+h2{
+    font-size: var(--text-xl);
+    line-height: 1.2;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-s);
+}
+
+h3{
+    font-size: var(--text-l);
+    line-height: 1.3;
+    margin-top: var(--space-l);
+    margin-bottom: var(--space-xs);
+}
+
+blockquote{
+    font-family: var(--kop);
+    font-style: italic;
+    font-size: var(--text-l);
+    line-height: 1.4;
+    border-left: 4px solid var(--accentkleur);
+    padding: var(--space-m);
+    margin-top: var(--space-l);
+    margin-bottom: var(--space-l);
+}
+
+blockquote > footer{
+    font-family: var(--tekst);
+    font-size: var(--text-s);
+    color: var(--gedemptkleur);
+}
+
+.bron{
+    font-size: var(--text-s);
+    color: var(--gedemptkleur);
+    border-top: 1px solid var(--lijnkleur);
+    padding: var(--space-m);
+    margin-top: var(--space-xl);
+}
 
 /* === the article === */
+
+article{
+    max-width: var(--kolombreedte);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    margin-left: auto;
+    margin-right: auto;
+}

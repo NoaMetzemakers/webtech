@@ -1,3 +1,227 @@
+Output 2 Labo 7:
+main nav a:hover,
+main nav a:focus {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+
+
+Output 1 Labo 7:
+/* === ZELFGEHOSTE LETTERS === */
+@font-face {
+    font-family: "SiteSans";
+    src: url("../fonts/jouw-lettertype.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: swap;
+}
+
+/* === TOKENS (B7.1 - Huisstijl 1) === */
+:root {
+    color-scheme: light dark;
+
+    /* 5 kleurrollen in hsl */
+    --color-surface: hsl(210 25% 97%);
+    --color-ink: hsl(218 24% 18%);
+    --color-muted: hsl(215 14% 40%);
+    --color-accent: hsl(218 78% 42%);
+    --color-line: hsl(212 20% 82%);
+
+    /* Vorm & typografie */
+    --radius: 0.375rem;
+    --font-body: "SiteSans", system-ui, -apple-system, sans-serif;
+    --font-heading: "SiteSans", system-ui, -apple-system, sans-serif;
+
+    /* Typografische schaal */
+    --text-s: 0.875rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-xxl: clamp(2rem, 4vw, 3rem);
+
+    /* Spacing-schaal */
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 3.5rem;
+}
+
+/* === DARK MODE (uitsluitend kleurtokens) === */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-surface: hsl(220 22% 11%);
+        --color-ink: hsl(210 25% 92%);
+        --color-muted: hsl(215 14% 68%);
+        --color-accent: hsl(212 85% 64%);
+        --color-line: hsl(218 18% 24%);
+    }
+}
+
+html {
+    scroll-padding-top: var(--space-xl);
+}
+
+/* === BASIS === */
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-size: var(--text-m);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+    line-height: 1.2;
+    margin-bottom: var(--space-s);
+}
+
+h1 {
+    font-size: var(--text-xxl);
+    margin: 0;
+}
+
+h2 {
+    font-size: var(--text-xl);
+}
+
+h3 {
+    font-size: var(--text-l);
+}
+
+p, ul, ol {
+    margin-bottom: var(--space-m);
+}
+
+small,
+footer {
+    font-size: var(--text-s);
+    color: var(--color-muted);
+}
+
+/* === HEADER & NAVIGATIE === */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-m);
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-line);
+    padding: var(--space-m) var(--space-l);
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-size: var(--text-l);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-ink);
+    padding: var(--space-xs) var(--space-s);
+    border-radius: var(--radius);
+    border-bottom: 2px solid transparent;
+}
+
+header nav a:hover,
+header nav a:focus {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+/* === INHOUD & LIJSTEN === */
+body > *:not(header):not(footer) {
+    max-width: 50rem;
+    margin-inline: auto;
+    width: 100%;
+    padding-inline: var(--space-l);
+    box-sizing: border-box;
+}
+
+body > h2:first-of-type,
+body > main > h2:first-of-type {
+    margin-top: var(--space-l);
+}
+
+main {
+    flex: 1;
+    padding-bottom: var(--space-l);
+}
+
+main nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+}
+
+main nav a {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-s);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    color: var(--color-ink);
+    text-decoration: none;
+}
+
+main nav a[href]:hover,
+main nav a[href]:focus {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+a {
+    color: var(--color-accent);
+}
+
+a:hover,
+a:focus {
+    color: var(--color-ink);
+}
+
+/* === AFBEELDING === */
+img {
+    display: block;
+    margin-block: var(--space-m) var(--space-l);
+    width: 100%;
+    max-width: 25rem;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-line);
+}
+
+/* === FOOTER === */
+footer {
+    border-top: 1px solid var(--color-line);
+    background-color: var(--color-surface);
+    text-align: center;
+    padding: var(--space-l);
+    margin-top: auto;
+}
+
+
+
+
 Output 2 Labo 6:
 /* === TOKENS (Professioneel Persoonlijk Palet + Labo 6) === */
 :root {

@@ -1,14 +1,155 @@
 /* stijl.css - labo 7, kaaien (reset.css is linked before this file) */
 
 /* === fonts === */
-
+@font-face {
+ font-family: "Fraunces";
+ src: url("../fonts/fraunces-latin-wght-normal.woff2") format("woff2");
+ font-weight: 100 900; 
+ font-display: swap; 
+}
 /* === tokens === */
 :root {
+    --oppervlakkleur: hsl(200 30% 97%);
+    --inktkleur: hsl(205 40% 12%);
+    --gedemptkleur: hsl(205 12% 40%);
+    --accentkleur: hsl(200 70% 32%);
+    --lijnkleur: hsl(200 20% 82%);
+    --donkerevlakkleur: rgb(0 0 0 / 0.55);
 
+    --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-xxl: 1.953rem;
+    --text-xxxl: 2.441rem;
+
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
 }
 
 /* === base === */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: "Fraunces", Georgia, serif;
+}
+
+.bovenkop {
+    font-size: var(--text-s);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: var(--space-s);
+}
+
+.lead {
+    font-size: var(--text-l);
+    margin-bottom: var(--space-l);
+    line-height: 1.4;
+}
+
+.knop {
+    display: inline-block;
+    background-color: var(--accentkleur);
+    color: white;
+    font-weight: 700;
+    padding: var(--space-s) var(--space-l);
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
+.knop:hover,
+.knop:focus {
+    background-color: white;
+    color: var(--color-accent);
+}
 
 /* === the hero: photo as background, text on a dark panel (7.10, F7.10) === */
+.held {
+    background-image: url("../afbeeldingen/kaaien.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70svh;
+    padding: clamp(1rem, 5vw, 4rem);
+}
+
+.paneel {
+    background-color: rgb(0 0 0 / 0.55);
+    max-width: 36rem;
+    padding: var(--space-l);
+    color: white;
+}
+
+.held h1 {
+    font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-m);
+}
 
 /* === main, aside with a corner decoration, footer with a repeating tile === */
+main {
+    max-width: 64rem;
+    margin-inline: auto;
+    padding: var(--space-xl) var(--space-m);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: var(--space-l);
+}
+
+h2 {
+    font-size: var(--text-xl);
+    color: var(--accentkleur);
+    margin-bottom: var(--space-s);
+    line-height: 1.2;
+}
+
+.tekst p {
+    max-width: 65ch;
+    margin-bottom: var(--space-m);
+}
+
+.praktisch {
+    border: 1px solid var(--lijnkleur);
+    padding: var(--space-m);
+    min-height: 18rem;
+    background-image: url("../afbeeldingen/kompas.png");
+    background-size: 8rem;
+    background-position: right 1rem bottom 1rem;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.praktisch ul {
+    list-style: disc;
+    padding-left: var(--space-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    margin-top: var(--space-s);
+}
+
+footer {
+    background-image: url("../afbeeldingen/golfjes.png");
+    background-repeat: repeat;
+    background-position: center;
+    border-top: 1px solid var(--lijnkleur);
+    padding: var(--space-xl) var(--space-m);
+    text-align: center;
+    color: var(--gedemptkleur);
+    font-size: var(--text-s);
+}
+
+footer p {
+    background-color: var(--oppervlakkleur);
+    padding: var(--space-s) var(--space-m);
+    display: inline;
+}

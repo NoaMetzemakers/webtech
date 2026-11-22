@@ -2,9 +2,63 @@
 
 /* === tokens === */
 :root {
+    --papierkleur: hsl(40 30% 97%);
+    --inktkleur: hsl(210 25% 12%);
+    --gedemptkleur: hsl(210 10% 42%);
+    
+    --hue: 210;
 
+    --text-s: 0.875rem;
+    --text-l: 1.5rem;
+
+    --space-l: 2rem;
 }
 
 /* === base === */
 
 /* === the ten steps: one rule per step === */
+body{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100svh;
+}
+
+header{
+    background-color: var(--papierkleur);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: var(--text-l);
+    line-height: 1.2;
+    padding: var(--space-l);
+}
+
+.ladder{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+p{
+    color: var(--gedemptkleur);
+    font-size: var(--text-s);
+}
+
+.trede{
+    color: var(--inktkleur);
+    padding: var(--space-l);
+}
+
+.trede:nth-child(6),.trede:nth-child(7),.trede:nth-child(8),.trede:nth-child(9),.trede:nth-child(10){
+    color: var(--papierkleur);
+}
+
+.trede:nth-child(1) { background-color: hsl(var(--hue) 55% 95%); }
+.trede:nth-child(2) { background-color: hsl(var(--hue) 55% 85%); }
+.trede:nth-child(3) { background-color: hsl(var(--hue) 55% 75%); }
+.trede:nth-child(4) { background-color: hsl(var(--hue) 55% 65%); }
+.trede:nth-child(5) { background-color: hsl(var(--hue) 55% 55%); }
+.trede:nth-child(6) { background-color: hsl(var(--hue) 55% 45%); }
+.trede:nth-child(7) { background-color: hsl(var(--hue) 55% 35%); }
+.trede:nth-child(8) { background-color: hsl(var(--hue) 55% 25%); }
+.trede:nth-child(9) { background-color: hsl(var(--hue) 55% 15%); }
+.trede:nth-child(10) { background-color: hsl(var(--hue) 55% 5%); }

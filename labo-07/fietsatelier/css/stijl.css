@@ -2,9 +2,182 @@
 
 /* === tokens for look A: colours, fonts, radius, type scale, spacing scale === */
 :root {
+    --oppervlakkleur: hsl(40 30% 96%);
+    --inktkleur: hsl(220 20% 15%);
+    --gedemptkleur: hsl(220 10% 42%);
+    --accentkleur: hsl(160 50% 30%);
+    --lijnkleur: hsl(40 15% 82%);
 
+    --radius: 0rem;
+
+    --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-xxl: 1.953rem;
+
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
 }
 
 /* === base === */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--oppervlakkleur);
+    color: var(--inktkleur);
+    font-size: var(--text-m);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+}
 
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
 /* === header, intro, cards, footer: every colour via var(), nothing hard-coded === */
+header.kop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-m) var(--space-l);
+    border-bottom: 1px solid var(--lijnkleur);
+    background-color: var(--oppervlakkleur);
+}
+
+.naam {
+    font-family: Georgia, serif;
+    font-size: var(--text-l);
+    font-weight: 700;
+    color: var(--inktkleur);
+
+}
+
+header nav ul {
+    display: flex;
+    gap: var(--space-m);
+    list-style: none;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--inktkleur);
+    font-weight: 700;
+    padding: var(--space-s);
+}
+
+header nav a:hover,
+header nav a:focus {
+    color: var(--accentkleur);
+    border-bottom-color: var(--accentkleur);
+}
+
+.intro {
+    max-width: 44rem;
+    padding: var(--space-xl) var(--space-l);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.bovenkop {
+    font-size: var(--text-s);
+    color: var(--accentkleur);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-s);
+}
+
+.intro h1 {
+    font-size: var(--text-xxl);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-m);
+    color: var(--inktkleur);
+}
+
+.lead {
+    font-size: var(--text-l);
+    color: var(--gedemptkleur);
+    margin-bottom: var(--space-l);
+    line-height: 1.5;
+}
+
+.knop {
+    display: inline-block;
+    background-color: var(--accentkleur);
+    color: var(--oppervlakkleur);
+    font-weight: 700;
+    padding: var(--space-s) var(--space-l);
+    text-decoration: none;
+    border: 2px solid var(--accentkleur);
+    border-radius: var(--radius);
+}
+
+.knop:hover,
+.knop:focus {
+    background-color: var(--oppervlakkleur);
+    color: var(--accentkleur);
+}
+
+.diensten {
+    max-width: 64rem;
+    padding: 0 var(--space-l) var(--space-xl);
+    flex: 1;
+}
+
+.diensten h2 {
+    font-size: var(--text-xl);
+    color: var(--inktkleur);
+    margin-bottom: var(--space-m);
+}
+
+.kaarten {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: var(--space-m);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kaart {
+    background-color: var(--oppervlakkleur);
+    border: 1px solid var(--lijnkleur);
+    border-radius: var(--radius);
+    padding: var(--space-m);
+    display: flex;
+    flex-direction: column;
+}
+
+.kaart h3 {
+    font-size: var(--text-l);
+    color: var(--inktkleur);
+    margin-bottom: var(--space-s);
+}
+
+.kaart p {
+    color: var(--gedemptkleur);
+    font-size: var(--text-m);
+    margin-bottom: var(--space-l);
+}
+
+.prijs {
+    font-weight: 700;
+    color: var(--accentkleur);
+    margin-top: auto;
+}
+
+footer {
+    border-top: 1px solid var(--lijnkleur);
+    padding: var(--space-m) var(--space-l);
+    color: var(--gedemptkleur);
+    font-size: var(--text-s);
+    text-align: center;
+    margin-top: auto;
+}
