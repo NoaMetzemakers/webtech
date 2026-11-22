@@ -49,8 +49,10 @@ De telling van mijn eigen site vóór dit labo (7.1): font-sizes ... / marges en
 
 ## Thuis: B7.1 (met AI of zonder AI)
 
-Welke route koos je? De twee screenshots van de tokenwissel staan in `site/review/`. Bij de AI-route: prompt en onbewerkte output staan in `site/review/`, en dit corrigeerde ik (met verwijzing naar de sectie of het foutnummer):
+Welke route koos je? 
+Ik heb voor de AI route gekozen.
+De twee screenshots van de tokenwissel staan in `site/review/`. Bij de AI-route: prompt en onbewerkte output staan in `site/review/`, en dit corrigeerde ik (met verwijzing naar de sectie of het foutnummer):
 
-1. 
-2. 
+1. Het LLM gaf het CSS attribuut [href] dat we nog niet in de leerstof gezien hebben, dat heb ik a.d.h.v. prompt 2 veranderd.
+2. Het LLM gaf geen echte .woff2 bestand in, die heb ik zelf toegevoegd.
 3. 
