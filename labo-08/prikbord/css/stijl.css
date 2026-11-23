@@ -1,0 +1,27 @@
+/* stijl.css - labo 8, prikbord (reset.css and fonts.css are linked before this file) */
+
+/* === tokens: colours, fonts, sizes, and one duration and one curve (8.1) === */
+:root {
+
+}
+
+/* === base, header === */
+
+/* === the board: a grid of notes === */
+
+/* === a note: the transition on the base state (8.2); every note turned a little (8.3) === */
+
+/* === the pin: a pseudo-element centred on the top edge (8.6, 8.3) === */
+
+/* === the stamp: move first, turn second (8.3) === */
+
+/* === focus exists on every device: outside the hover query === */
+
+/* === hover only where hovering exists (6.9) === */
+@media (hover: hover) {
+
+}
+
+/* === footer === */
+
+/* === reduced motion (8.5) === */

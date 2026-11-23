@@ -1,0 +1,14 @@
+/* stijl.css - labo 8, pijlen (reset.css is linked before this file) */
+
+/* === tokens: colours, the three shapes, one duration and one curve === */
+:root {
+
+}
+
+/* === the grid in the middle of the window (4.7) === */
+
+/* === the tiles: a shape and a colour that change together (8.4, 8.6) === */
+
+/* === keyframes: three stops === */
+
+/* === reduced motion (8.5) === */

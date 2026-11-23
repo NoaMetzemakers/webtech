@@ -1,0 +1,14 @@
+/* stijl.css - labo 8, estafette (reset.css is linked before this file) */
+
+/* === tokens: colours, one duration, one curve and the time between two runners === */
+:root {
+
+}
+
+/* === four lanes that fill the window === */
+
+/* === the runners: one animation, there and back; each one starts a little later (8.4) === */
+
+/* === keyframes: only the way there === */
+
+/* === reduced motion (8.5) === */

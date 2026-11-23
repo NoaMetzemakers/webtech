@@ -1,0 +1,21 @@
+/* stijl.css - labo 8, maaklab (reset.css and fonts.css are linked before this file) */
+
+/* === tokens: colours, fonts, sizes, and one duration and one curve (8.1) === */
+:root {
+
+}
+
+/* === base === */
+
+/* === header: links with an underline that grows from the left (8.3, 8.6) === */
+
+/* === cards: transition on the base state (8.2), lift on hover and focus-within === */
+
+/* === hover only where hovering exists (6.9) === */
+@media (hover: hover) {
+
+}
+
+/* === footer === */
+
+/* === reduced motion (8.5) === */

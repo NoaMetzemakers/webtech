@@ -1,0 +1,16 @@
+/* stijl.css - labo 8, vertrekbord (reset.css and fonts.css are linked before this file) */
+
+/* === tokens: a dark board === */
+:root {
+
+}
+
+/* === base: header, list, footer at the bottom (4.7) === */
+
+/* === the live dot: a pseudo-element that pulses (8.4, 8.6) === */
+
+/* === the departures === */
+
+/* === the loading ring and the extra departure (8.4) === */
+
+/* === reduced motion (8.5) === */
